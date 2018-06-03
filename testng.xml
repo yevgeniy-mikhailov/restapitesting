@@ -1,0 +1,27 @@
+<suite name="Tests for https://reqres.in/" verbose="1" >
+    <test name="Regression tests" >
+        <classes>
+            <class name="Test_ForCommand_User">
+            <methods>
+                <include name="testCheckCorrectRequestStatusWithCorrectData"/>
+                <include name="testCheckCorrectRequestStatusWithIncorrectData"/>
+                <include name="testCheckCorrectRequestStatusLineWithCorrectData"/>
+                <include name="testCheckCorrectRequestId"/>
+                <include name="testBodyContainsFirstName"/>
+                <include name="testBodyContainsLastName"/>
+                <include name="testBodyContainsAvatar"/>
+                <include name="testGetUserWithoutUserId"/>
+            </methods>
+            </class>
+            <class name="Test_ForCommand_Login">
+            <methods>
+                <include name="testLoginWithCorrectEmailAndCorrectPassword"/>
+                <include name="testCheckTokenIsCorrect"/>
+                <include name="testLoginWithIncorrectData"/>
+                <include name="testLoginWithMissingData"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+
+</suite>
